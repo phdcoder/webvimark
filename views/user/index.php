@@ -131,9 +131,9 @@ $this->params['breadcrumbs'][] = $this->title;
                         'label' => '',
                         'value'=>function(User $model){
                             return GhostHtml::a(
-                                UserManagementModule::t('back', 'Átváltás'),
+                                UserManagementModule::t('back', 'Logar'),
                                 ['/user-management/user/switch', 'id'=>$model->id],
-                                ['class'=>'btn btn-sm btn-primary', 'data-pjax'=>0, 'data-confirm' => 'Biztos vagy benne, hogy át szeretnél váltani erre a felhasználóra?']);
+                                ['class'=>'btn btn-sm btn-primary', 'data-pjax'=>0, 'data-confirm' => 'Você tem certeza de que deseja mudar para este usuário?']);
                         },
                         'format'=>'raw',
                         'options'=>[
